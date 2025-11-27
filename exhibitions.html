@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Краєзнавчий музей — Експозиції</title>
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+
+    <body>
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="index.html">
+                    <div class="logo-mark" aria-hidden="true">
+
+                        <svg width="40" height="40" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" stroke="#CCCC00" stroke-width="4" stroke-linecap="round">
+
+                            <polygon points="20,60 180,60 100,20" />
+
+                            <line x1="20" y1="70" x2="180" y2="70"/>
+                            <line x1="25" y1="78" x2="175" y2="78" stroke-width="2"/>
+
+                            <line x1="45" y1="80" x2="45" y2="150"/>
+                            <line x1="80" y1="80" x2="80" y2="150"/>
+                            <line x1="120" y1="80" x2="120" y2="150"/>
+                            <line x1="155" y1="80" x2="155" y2="150"/>
+
+                            <line x1="20" y1="150" x2="180" y2="150"/>
+
+                            <line x1="15" y1="160" x2="185" y2="160" stroke-width="3"/>
+                            <line x1="10" y1="170" x2="190" y2="170" stroke-width="3"/>
+
+                        </svg>
+
+                    </div>
+                    <div class="brand-text"><strong>Краєзнавчий <br> Музей</strong></div>
+                </a>
+
+
+                <nav class="main-nav" aria-label="Головне меню">
+                    <a href="index.html">Головна</a>
+                    <a href="exhibitions.html">Експозиції</a>
+                    <a href="about.html">Про музей</a>
+                    <a href="contact.html">Контакти</a>
+                </nav>
+
+
+                <button id="navToggle2" class="nav-toggle" aria-expanded="false" aria-label="Меню">≡</button>
+            </div>
+        </header>
+
+
+        <main>
+            <section class="container">
+                <h1>Експозиції</h1>
+
+
+                <div class="filters">
+                    <input id="collectionSearch" placeholder="Пошук за назвою..." />
+                    <select id="collectionType">
+                        <option value="">Усі категорії</option>
+                        <option value="arch">Археологія</option>
+                        <option value="ethno">Етнографія</option>
+                        <option value="nature">Природа</option>
+                        <option value="history">Історія</option>
+                        <option value="weapon">Зброя</option>
+                        <option value="art">Мистецтво</option>
+                    </select>
+                </div>
+
+
+                <div id="collectionsGrid" class="grid">
+
+                    <article class="card" data-type="arch">
+                        <img src="assets/images/ex1.jpg" alt="Амфора">
+                        <h3 class="title">Амфори з поселення</h3>
+                        <p class="desc">Керамічна амфори, знайдена під час розкопок.</p>
+                    </article>
+
+                    <article class="card" data-type="arch">
+                        <img src="assets/images/ex4.jpg" alt="Глиняний глек">
+                        <h3 class="title">Глиняні глеки</h3>
+                        <p class="desc">Побутовий посуд III–IV ст. н.е.</p>
+                    </article>
+
+                    <article class="card" data-type="arch">
+                        <img src="assets/images/ex5.jpg" alt="Наконечник списа">
+                        <h3 class="title">Наконечники списів</h3>
+                        <p class="desc">Залізні наконечникі скіфської доби.</p>
+                    </article>
+
+                    <!-- етнографія -->
+                    <article class="card" data-type="ethno">
+                        <img src="assets/images/ex2.jpg" alt="Костюм">
+                        <h3 class="title">Народні костюми</h3>
+                        <p class="desc">Традиційний одяг регіону XIX ст.</p>
+                    </article>
+
+                    <article class="card" data-type="ethno">
+                        <img src="assets/images/ex6.jpg" alt="Писанки">
+                        <h3 class="title">Писанки</h3>
+                        <p class="desc">Зразки автентичного розпису.</p>
+                    </article>
+
+                    <article class="card" data-type="ethno">
+                        <img src="assets/images/ex7.jpg" alt="Домоткана тканина">
+                        <h3 class="title">Домоткана тканини</h3>
+                        <p class="desc">Фрагмент ручного ткацтва кінця XIX ст.</p>
+                    </article>
+
+                    <!-- природа -->
+                    <article class="card" data-type="nature">
+                        <img src="assets/images/ex3.jpg" alt="Флора">
+                        <h3 class="title">Природа краю</h3>
+                        <p class="desc">Рослинни та тварини, характерні регіону.</p>
+                    </article>
+
+                    <article class="card" data-type="nature">
+                        <img src="assets/images/ex8.jpg" alt="Мінерали">
+                        <h3 class="title">Колекції мінералів</h3>
+                        <p class="desc">Мінерали та породи, знайдені у регіоні.</p>
+                    </article>
+
+                    <!-- історія -->
+                    <article class="card" data-type="history">
+                        <img src="assets/images/ex9.jpg" alt="Стара мапа">
+                        <h3 class="title">Мапи регіону 1800-х</h3>
+                        <p class="desc">Оригінальні географічні карти XVIII–XIX ст.</p>
+                    </article>
+
+                    <article class="card" data-type="history">
+                        <img src="assets/images/ex10.jpg" alt="Листи">
+                        <h3 class="title">Архівні листи</h3>
+                        <p class="desc">Особисте листування місцевої родини 1920-х.</p>
+                    </article>
+
+                    <!-- зброя -->
+                    <article class="card" data-type="weapon">
+                        <img src="assets/images/ex11.jpg" alt="Козацька шабля">
+                        <h3 class="title">Козацькі шаблі</h3>
+                        <p class="desc">Зброя українського козацтва XVII ст.</p>
+                    </article>
+
+                    <article class="card" data-type="weapon">
+                        <img src="assets/images/ex12.jpg" alt="Пістоль">
+                        <h3 class="title">Порохові пістолі</h3>
+                        <p class="desc">Піхотна зброя XVIII ст.</p>
+                    </article>
+
+                    <!-- мистецтво -->
+                    <article class="card" data-type="art">
+                        <img src="assets/images/ex13.jpg" alt="Картина">
+                        <h3 class="title">Полотна місцевих художників</h3>
+                        <p class="desc">Живопис початку ХХ ст.</p>
+                    </article>
+
+
+
+                    <!-- археологія -->
+                    <article class="card" data-type="arch">
+                        <img src="assets/images/ex14.jpg" alt="Бронзовий браслет">
+                        <h3 class="title">Бронзові прикраси</h3>
+                        <p class="desc">Прикраси доби бронзи, знайдені у курганному могильнику.</p>
+                    </article>
+
+                    <article class="card" data-type="arch">
+                        <img src="assets/images/ex15.jpg" alt="Керамічний фрагмент">
+                        <h3 class="title">Фрагменти кераміки</h3>
+                        <p class="desc">Частини гончарних виробів скіфського періоду.</p>
+                    </article>
+
+                    <!-- етнографія -->
+                    <article class="card" data-type="ethno">
+                        <img src="assets/images/ex16.jpg" alt="Музичні інструменти">
+                        <h3 class="title">Музичні інструменти</h3>
+                        <p class="desc">Традиційні музичні інструменти мешканців краю.</p>
+                    </article>
+
+                    <!-- історія -->
+                    <article class="card" data-type="history">
+                        <img src="assets/images/ex18.jpg" alt="Старий документ">
+                        <h3 class="title">Історичні документи</h3>
+                        <p class="desc">Ревізькі казки та архівні записи XVIII ст.</p>
+                    </article>
+
+                    <article class="card" data-type="history">
+                        <img src="assets/images/ex19.jpg" alt="Фотографії">
+                        <h3 class="title">Старі фотографії</h3>
+                        <p class="desc">Побутове життя регіону на світлинах 1900-х років.</p>
+                    </article>
+
+                    <!-- мистецтво -->
+                    <article class="card" data-type="art">
+                        <img src="assets/images/ex21.jpg" alt="Скульптура">
+                        <h3 class="title">Скульптурні роботи</h3>
+                        <p class="desc">Дерев'яні та кам'яні скульптури місцевих майстрів.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <div>© Краєзнавчий музей — 2025</div>
+                <div class="socials">
+                    <a href="#" aria-label="facebook">FB</a>
+                    <a href="#" aria-label="instagram">IG</a>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="assets/main.js"></script>
+    </body>
+</html>

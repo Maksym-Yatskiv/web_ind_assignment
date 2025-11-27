@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Краєзнавчий музей — Головна</title>
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="index.html">
+                    <div class="logo-mark" aria-hidden="true">
+
+                        <svg width="40" height="40" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" stroke="#CCCC00" stroke-width="4" stroke-linecap="round">
+
+                            <polygon points="20,60 180,60 100,20" />
+
+                            <line x1="20" y1="70" x2="180" y2="70"/>
+                            <line x1="25" y1="78" x2="175" y2="78" stroke-width="2"/>
+
+                            <line x1="45" y1="80" x2="45" y2="150"/>
+                            <line x1="80" y1="80" x2="80" y2="150"/>
+                            <line x1="120" y1="80" x2="120" y2="150"/>
+                            <line x1="155" y1="80" x2="155" y2="150"/>
+
+                            <line x1="20" y1="150" x2="180" y2="150"/>
+
+                            <line x1="15" y1="160" x2="185" y2="160" stroke-width="3"/>
+                            <line x1="10" y1="170" x2="190" y2="170" stroke-width="3"/>
+
+                        </svg>
+
+                    </div>
+                    <div class="brand-text"><strong>Краєзнавчий <br> Музей</strong></div>
+                </a>
+
+
+                <nav class="main-nav" aria-label="Головне меню">
+                    <a href="index.html">Головна</a>
+                    <a href="exhibitions.html">Експозиції</a>
+                    <a href="about.html">Про музей</a>
+                    <a href="contact.html">Контакти</a>
+                </nav>
+
+
+                <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-label="Меню">≡</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="container">
+                <div class="photo-banner" role="region" aria-label="Головна фотографія музею">
+                    <div class="bg" style="background-image:url('assets/images/photo1.jpg');"></div>
+                    <div class="overlay" aria-hidden="true"></div>
+                    <div class="inner">
+                        <h2>Ознайомтеся з будівлею, що зберігає історію краю</h2>
+                    </div>
+                </div>
+
+                <div style="display:flex;gap:1rem;margin-top:0.6rem;flex-wrap:wrap;">
+                    <div class="photo-banner" style="flex:1;min-width:260px;">
+                        <div class="bg" style="background-image:url('assets/images/photo2.jpg');"></div>
+                        <div class="overlay" aria-hidden="true"></div>
+                        <div class="inner">
+                            <h2>Артефакти</h2>
+                            <p style="color:white;margin-top:0.4rem;">Пам'ятки давніх часів з колекцій музею.</p>
+                        </div>
+                    </div>
+
+                    <div class="photo-banner" style="flex:1;min-width:260px;">
+                        <div class="bg" style="background-image:url('assets/images/photo3.jpg');"></div>
+                        <div class="overlay" aria-hidden="true"></div>
+                        <div class="inner">
+                            <h2>Етнографія</h2>
+                            <p style="color:white;margin-top:0.4rem;">Традиції та побут нашого краю.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-tiles" aria-hidden="false">
+                    <div class="photo-tile" style="background-image:url('assets/images/tile1.jpg');">
+                        <div class="caption">Скарбниця регіону</div>
+                    </div>
+                    <div class="photo-tile" style="background-image:url('assets/images/tile2.jpg');">
+                        <div class="caption">Рукописи</div>
+                    </div>
+                    <div class="photo-tile" style="background-image:url('assets/images/tile3.jpg');">
+                        <div class="caption">Історичні місцевості</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="hero">
+                <div class="container hero-inner">
+                    <div id="heroCarousel" class="carousel">
+                        <div class="slide active">
+                            <img src="assets/images/hero1.jpg" alt="Фасад музею" loading="lazy">
+                            <div class="caption">
+                                <h1>Краєзнавчий музей</h1>
+                                <p>Історія регіону у експонатах та розповідях. Запрошуємо на виставки й екскурсії.</p>
+                                <a class="btn" href="exhibitions.html">Переглянути експозиції</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/hero2.jpg" alt="Артефакти" loading="lazy">
+                            <div class="caption">
+                                <h1>Колекції</h1>
+                                <p>Археологія, етнографія, історія та природа краю.</p>
+                                <a class="btn" href="exhibitions.html">Детальніше</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button id="prevSlide" aria-label="Попередній">‹</button>
+                        <button id="nextSlide" aria-label="Наступний">›</button>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="ticket-info container">
+                <h2>Вартість та умови відвідування</h2>
+
+                <div class="info-block">
+                    <h3>Вартість квитків</h3>
+                    <ul>
+                        <li>Для дітей та студентів — <strong>50 грн</strong></li>
+                        <li>Для дорослих — <strong>70 грн</strong></li>
+                    </ul>
+                </div>
+
+                <div class="info-block">
+                    <h3>Екскурсійне обслуговування</h3>
+                    <ul>
+                        <li>Група до 5 осіб — <strong>100 грн</strong></li>
+                        <li>Група понад 5 осіб — <strong>200 грн</strong></li>
+                        <li>Екскурсія англійською мовою — <strong>300 грн</strong></li>
+                    </ul>
+                </div>
+
+                <div class="info-block">
+                    <h3>Дні відкритих дверей</h3>
+                    <ul>
+                        <li>18 травня — Міжнародний день музеїв</li>
+                        <li>28 червня — День Конституції України</li>
+                        <li>24 серпня — День Незалежності України</li>
+                    </ul>
+                </div>
+
+                <div class="info-block">
+                    <h3>Безкоштовне відвідування</h3>
+
+                    <h4>1. Соціальна відповідальність</h4>
+                    <ul>
+                        <li>Діти до 6 років у супроводі дорослих</li>
+                        <li>Члени багатодітних сімей</li>
+                        <li>Діти-сироти та діти, позбавлені батьківського піклування</li>
+                        <li>ВПО з тимчасово окупованих територій</li>
+                        <li>Особи з інвалідністю</li>
+                        <li>Постраждалі внаслідок аварії на ЧАЕС (I–II категорії)</li>
+                        <li>Пенсіонери (остання неділя місяця)</li>
+                    </ul>
+
+                    <h4>2. Захисни(ки)ці та рятувальни(ки)ці</h4>
+                    <ul>
+                        <li>Військовослужбовці Сил оборони України</li>
+                        <li>Учасники бойових дій, ветерани, інваліди війни</li>
+                        <li>Родини загиблих військовослужбовців</li>
+                        <li>Родини загиблих поліцейських та співробітників ДСНС</li>
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <div>© Краєзнавчий музей — 2025</div>
+                <div class="socials">
+                    <a href="#" aria-label="facebook">FB</a>
+                    <a href="#" aria-label="instagram">Inst</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="assets/main.js"></scrip
+            <script src="assets/main.js"></script>
+
+    </body>
+</html>
