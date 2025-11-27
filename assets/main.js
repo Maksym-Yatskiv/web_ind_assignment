@@ -8,10 +8,11 @@
             const open = btn.getAttribute('aria-expanded') === 'true';
             btn.setAttribute('aria-expanded', String(!open));
             nav.style.display = open ? '' : 'flex';
-            nav.style.flexDirection = 'column';
+            nav.style.flexDirection = open ? 'row' : 'column';
             nav.style.gap = '.6rem';
             nav.style.background = 'rgba(0,0,0,0.4)';
             nav.style.padding = '.8rem';
+
         });
     }
     initNavToggle('navToggle'); initNavToggle('navToggle2'); initNavToggle('navToggle3'); initNavToggle('navToggle4');
